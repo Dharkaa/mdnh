@@ -1,0 +1,121 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hapus jika tidak digunakan */
+.container {}
+
+.container-navbar {
+    background-color: #ff0000d2;
+    width: 100%;
+    height: 10vh;
+}
+
+.ul-navbar {
+    display: flex;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.li-navbar:hover {
+    background-color: tomato;
+    transition: .4s ease-in-out;
+    transition-delay: 100ms; /* Lebih realistis */
+}
+
+.a-navbar {
+    color: white;
+    text-decoration: none;
+}
+
+.container-content {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.a-content {
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 12px 12px 2px 1px rgba(2, 2, 223, 0.2);
+}
+
+.img-foto {
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.img-foto-mdnh {
+    max-width: 30%;
+    position: absolute;
+    border-radius: 10px;
+    margin-bottom: -5%;
+    height: auto;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-footer {
+    height: 10vh;
+    background-color: #ff0000d2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.h1-footer {
+    font-size: 30px;
+    color: rgb(253, 253, 253);
+}
+
+.h1-title {
+    width: 50px;
+    height: 0px; /* Perbaiki nilai height atau hapus */
+}
+
+.h2-about {
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    height: 65%; /* Pastikan ini tidak merusak layout di mobile */
+}
+
+.h4-about {
+    background-color: transparent;
+    position: absolute;
+    height: auto;
+    width: auto;
+    margin-bottom: 27%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 700px) {
+    /* Pastikan ini ditutup dan diisi */
+    .img-foto {
+        width: 100%;
+        height: auto;
+    }
+}
