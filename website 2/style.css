@@ -3,6 +3,8 @@ html {
     margin: 0;
     padding: 0;
 }
+
+/* Hapus jika tidak digunakan */
 .container {}
 
 .container-navbar {
@@ -29,17 +31,13 @@ html {
 .li-navbar:hover {
     background-color: tomato;
     transition: .4s ease-in-out;
-    transition-delay: .1ms;
-    border-radius: 70px;
+    transition-delay: 100ms; /* Lebih realistis */
 }
 
-.li-navbar {}
-
-.a-navbar{
+.a-navbar {
     color: white;
     text-decoration: none;
-    }
-
+}
 
 .container-content {
     background-color: rgb(255, 255, 255);
@@ -60,12 +58,14 @@ html {
     justify-content: space-between;
     align-items: center;
     box-shadow: 12px 12px 2px 1px rgba(2, 2, 223, 0.2);
-
 }
+
 .img-foto {
     width: 300px;
     height: 200px;
+    position: relative;
 }
+
 .img-foto-mdnh {
     max-width: 30%;
     position: absolute;
@@ -84,7 +84,7 @@ html {
     justify-content: center;
     align-content: center;
 }
-    
+
 .h1-footer {
     font-size: 30px;
     color: rgb(253, 253, 253);
@@ -92,16 +92,14 @@ html {
 
 .h1-title {
     width: 50px;
-    height: 0000px;
+    height: 0px; /* Perbaiki nilai height atau hapus */
 }
 
 .h2-about {
     background-color: transparent;
     display: flex;
     position: absolute;
-    height: 65%;
-    
-
+    height: 65%; /* Pastikan ini tidak merusak layout di mobile */
 }
 
 .h4-about {
@@ -114,4 +112,10 @@ html {
     margin-right: auto;
 }
 
-@media (max-width: 700px)
+@media (max-width: 700px) {
+    /* Pastikan ini ditutup dan diisi */
+    .img-foto {
+        width: 100%;
+        height: auto;
+    }
+}
